@@ -28,8 +28,7 @@ public class Kata4 {
         
         Date date = new Date();
         
-        int read;
-        while ((read = input.read(buffer))>= 0)
+        while (input.read(buffer)>= 0)
             output.write(buffer);
         input.close();
         output.close();
